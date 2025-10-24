@@ -29,27 +29,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact Form Handling (Placeholder - will need actual backend)
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value
-    };
-
-    // TODO: In production, this will send to your email service
-    // For now, just show a confirmation
-    alert('Thank you for your message! This form will be configured to send to your email once the site is deployed.\n\nForm Data:\nName: ' + formData.name + '\nEmail: ' + formData.email);
-
-    // Reset form
-    contactForm.reset();
-});
+// Contact Form Handling - Formspree handles the submission
+// Form will automatically submit to Formspree and show their default confirmation page
 
 // Add fade-in animation on scroll
 const observerOptions = {
