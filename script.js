@@ -29,8 +29,47 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact Form Handling - Formspree handles the submission
-// Form will automatically submit to Formspree and show their default confirmation page
+// Contact Form Handling - Submit to Formspree then redirect to custom thank-you page
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+
+        // Disable button and show loading state
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+
+        try {
+            // Submit to Formspree
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Success - redirect to thank-you page
+                window.location.href = 'thank-you.html';
+            } else {
+                // Error handling
+                alert('Oops! There was a problem submitting your form. Please try again or email me directly.');
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+            }
+        } catch (error) {
+            // Network error
+            alert('Oops! There was a problem submitting your form. Please try again or email me directly.');
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send Message';
+        }
+    });
+}
 
 // Add fade-in animation on scroll
 const observerOptions = {
