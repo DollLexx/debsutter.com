@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Deb Sutter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--pale-lavender) 0%, var(--warm-white) 100%);
+            padding: 40px 20px;
+        }
+
+        .thank-you-content {
+            max-width: 600px;
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(107, 74, 142, 0.15);
+        }
+
+        .thank-you-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .thank-you-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--deep-purple);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .thank-you-content p {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .thank-you-content .highlight {
+            color: var(--primary-purple);
+            font-weight: 600;
+        }
+
+        .thank-you-buttons {
+            margin-top: 40px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--deep-purple), var(--primary-purple));
+            color: white;
+            box-shadow: 0 4px 15px rgba(107, 74, 142, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(107, 74, 142, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--deep-purple);
+            border: 2px solid var(--primary-purple);
+        }
+
+        .btn-secondary:hover {
+            background: var(--pale-lavender);
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--pale-lavender);
+        }
+
+        .contact-info p {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: var(--primary-purple);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            color: var(--deep-purple);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 40px 25px;
+            }
+
+            .thank-you-content h1 {
+                font-size: 2rem;
+            }
+
+            .thank-you-icon {
+                font-size: 60px;
+            }
+
+            .thank-you-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">✨</div>
+            <h1>Thank You for Reaching Out!</h1>
+            <p>Your message has been received and is on its way to me.</p>
+            <p>I typically respond within <span class="highlight">24-48 hours</span>. I look forward to connecting with you about your healing journey.</p>
+            <p>If you need immediate assistance, please feel free to call or text me directly.</p>
+
+            <div class="thank-you-buttons">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="tel:+19082279296" class="btn btn-secondary">Call Me</a>
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:debsutter.healing@gmail.com">debsutter.healing@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+19082279296">(908) 227-9296</a></p>
+                <p><strong>Location:</strong> Bath, PA.  Remote Sessions Available</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
