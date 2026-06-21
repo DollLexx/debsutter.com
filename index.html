@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deb Sutter - PSYCH-K Facilitator | Reiki Master-Teacher</title>
+    <title>Deb Sutter - PSYCH-K® Facilitator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,9 @@
         <div class="container">
             <div class="nav-brand">Deb Sutter</div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Deb</a></li>
+                <li><a href="services.html">Services</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -28,180 +27,59 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to a Journey of Healing & Transformation</h1>
-            <p class="hero-subtitle">PSYCH-K&reg; Facilitator | Reiki Master-Teacher</p>
-            <p class="hero-description">Guiding you toward balance, peace, and personal empowerment through subconscious belief transformation and gentle energy work.</p>
-            <a href="#contact" class="cta-button">Begin Your Healing Journey</a>
-        </div>
-    </section>
+    <!-- Hero + Contact Split Section -->
+    <section id="home" class="hero-split">
+        <div class="hero-split-inner">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Deb</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="SubconsciousInMovement.png" alt="Subconscious in Movement - Spiritual Energy Art">
+            <!-- Left: Hero Content -->
+            <div class="split-hero">
+                <h1>Transform Your Beliefs.<br>Transform Your Life.</h1>
+                <p class="hero-subtitle">PSYCH-K&reg; Facilitator</p>
+                <div class="hero-logo">
+                    <img src="psychk-hwp-logo.jpeg" alt="PSYCH-K® Health and Wellbeing Program Official Logo" class="psychk-logo">
                 </div>
-                <div class="about-text">
-                    <h3>PSYCH-K&reg; Facilitator & Certified Reiki Master-Teacher</h3>
-                    <p>
-                        I discovered my own energy in 2010 when I felt it shoot through me, out the top of my head, for the first time in my life at a specific meaningful moment.  Energy like that was foreign and of a whole different dimension to me.</p>
+                <p class="hero-description">Using PSYCH-K&reg; to help you identify and shift the subconscious beliefs that shape your life — opening the door to lasting change, peace, and personal growth.</p>
+                <a href="services.html" class="cta-button">Learn More</a>
+            </div>
 
-                        I spent the next 14 years trying to understand the what, when, and how of my experience, while dealing with deep emotional challenges of what that energy meant to me and what it meant regarding certain persons in my life.  I struggled trying to understand my energy - how to use it and how it could help me.  </p> 
-                        
-                        In 2024, in deep emotional pain and worsening depression, I met a wonderful lady who is a trained Shamanic Healer, Reiki Master-Teacher, a PSYCH-K&reg; facilitator and more. Through energy work (like Reiki) and a single PSYCH-K&reg; session, my emotional pain was gone!!  My life began to change for the better.  </p>
-                        
-                        Experiencing for myself how effective Reiki and PSYCH-K&reg; are, it became my goal to learn these tools to continue the process of making my life better, through healing my body, mind, emotions and spirit.  
-                        
-                        I trained to be a Reiki Master-Teacher. I am currently training in PSYCH-K&reg;, recently having completed the Master level.  My PSYCH-K&reg; education will continue in 2026 to Advanced and more!</p>
-
-                        Healing comes from within - miracles happen - and the right tools help unlock the potential that is already within us.  PSYCH-K&reg; and Reiki are tools, the keys to a better life!                     
-                    </p>
-
-                    <div class="credentials">
-                        <h4>Certifications & Training</h4>
-                        <ul>
-                            <li>✨ PSYCH-K&reg; Facilitator - Master</li>
-                            <li>✨ Reiki Master-Teacher</li>
-                        </ul>
+            <!-- Right: Contact Form -->
+            <div class="split-contact">
+                <h2>Get in Touch</h2>
+                <p class="split-contact-intro">Ready to begin your journey?</p>
+                <form id="contactForm" action="https://formspree.io/f/xwprgnqw" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+                <div class="split-contact-details">
+                    <p><a href="mailto:debsutter.healing@gmail.com">debsutter.healing@gmail.com</a></p>
+                    <p><a href="tel:+19082279296">(908) 227-9296</a></p>
+                    <p>Bath, PA &bull; Remote Sessions Available</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Services Offered</h2>
-            <p class="section-intro">Each session is tailored to your unique needs and goals, providing a safe and supportive space for healing and growth.</p>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🦋</div>
-                    <h3>PSYCH-K&reg; Facilitation</h3>
-                    <p>Each session is up to you. Reflect on your life. What do you want instead? Create goals and transform.</p>
-                    <ul class="service-details">
-                        <li>Individual Sessions: 1 hour</li>
-                        <li>Available: In-person/Remote</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🌟</div>
-                    <h3>Reiki</h3>
-                    <p>Relax, Reiki's got this!  Set the intention and Reiki goes where you need it.</p>
-                    <ul class="service-details">
-                        <li>In-Person Sessions: 1 hour</li>
-                        <li>Available:  Distance/Remote Sessions</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🌸</div>
-                    <h3>Reiki Training & Attunements</h3>
-                    <p>Training includes attunements at each level, discussion, followed by live practice.</p>
-                    <ul class="service-details">
-                        <li>Level I, II, Master Training Available</li>
-                        <li>Individual or Group Classes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>What is Reiki?</h3>
-                    <p>Reiki is a holistic healing system originally devised by a Japanese Buddhist monk, Dr. Mikao Usui.  It is a healing process that can bring help and comfort to people suffering from a range of conditions, or simply a need to relax and rejuvenate.  As a natural form of healing, Reiki can support and enhance your own body's health and well being.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>What is PSYCH-K?&reg;</h3>
-                    <p>PSYCH-K&reg; is a simple yet powerful way to change the beliefs that shape your life. It helps you tap deep into yourself and reprogram limiting beliegs into ones that support your goals, peace and growth.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Do you offer distance/remote sessions?</h3>
-                    <p>For PSYCH-K&reg;, in person or remote sessions are available.  Remote sessions are effective and will allow us to work around your busy schedule.  For Reiki, at this time, remote sessions are preferable.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>How many sessions will I need?</h3>
-                    <p>The number of sessions you need is completely up to you.  Take it at your own pace, leaving yourself time to feel the effects of the sessions in between.  It is possible that only one session will be enough. </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-intro">Ready to begin your healing journey? I'd love to hear from you.</p>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <span class="contact-label">Email:</span>
-                        <a href="mailto:debsutter.healing@gmail.com">debsutter.healing@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Phone:</span>
-                        <a href="tel:+19082279296">(908) 227-9296</a>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Location:</span>
-                        <span>Bath, PA<br>Remote Sessions Available</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-label">Hours:</span>
-                        <span>By Appointment</span>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/xwprgnqw" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone (Optional)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Send Message</button>
-                    </form>
-                    <p class="form-note">Your message will be sent directly to debsutter.healing@gmail.com</p>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Deb Sutter. All rights reserved.</p>
-            <p class="footer-note">PSYCH-K&reg; Facilitator | Reiki Master-Teacher</p>
+            <p>&copy; 2026 Deb Sutter. All rights reserved.</p>
+            <p class="footer-note">PSYCH-K&reg; Facilitator</p>
         </div>
     </footer>
 

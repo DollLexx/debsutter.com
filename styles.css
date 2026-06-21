@@ -98,43 +98,194 @@ body {
     transition: 0.3s;
 }
 
+/* Hero + Contact Split Layout (home page) */
+.hero-split {
+    background: linear-gradient(135deg, var(--pale-lavender) 0%, var(--soft-lavender) 50%, var(--primary-purple) 100%);
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-split-inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.split-hero {
+    text-align: left;
+}
+
+.split-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--deep-purple);
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.split-hero .hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--primary-purple);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.split-hero .hero-logo {
+    margin: 1rem 0 1.2rem;
+}
+
+.split-hero .hero-description {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* Right-side contact panel */
+.split-contact {
+    background: rgba(255, 249, 245, 0.88);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 30px rgba(107, 74, 142, 0.18);
+}
+
+.split-contact h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--deep-purple);
+    margin-bottom: 0.3rem;
+}
+
+.split-contact-intro {
+    color: var(--warm-gray);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.split-contact .form-group {
+    margin-bottom: 1rem;
+}
+
+.split-contact .form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--deep-purple);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.split-contact .form-group input,
+.split-contact .form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid var(--soft-lavender);
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    background: var(--warm-white);
+    transition: border-color 0.3s ease;
+}
+
+.split-contact .form-group input:focus,
+.split-contact .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-purple);
+}
+
+.split-contact-details {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--soft-lavender);
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    line-height: 1.9;
+}
+
+.split-contact-details a {
+    color: var(--primary-purple);
+    text-decoration: none;
+}
+
+.split-contact-details a:hover {
+    color: var(--deep-purple);
+}
+
+@media (max-width: 900px) {
+    .hero-split-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .split-hero {
+        text-align: center;
+    }
+
+    .split-hero .hero-subtitle,
+    .split-hero .hero-logo {
+        text-align: center;
+    }
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--pale-lavender) 0%, var(--soft-lavender) 50%, var(--primary-purple) 100%);
-    padding: 180px 20px 120px;
+    padding: 120px 20px 80px;
     text-align: center;
     margin-top: 60px;
 }
 
+.hero-compact {
+    padding: 90px 20px 60px;
+}
+
 .hero-content {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .hero h1 {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
+    font-size: 2.6rem;
     font-weight: 600;
     color: var(--deep-purple);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     color: var(--primary-purple);
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     letter-spacing: 2px;
 }
 
 .hero-description {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: var(--text-dark);
-    margin-bottom: 2.5rem;
-    max-width: 650px;
+    margin-bottom: 2rem;
+    max-width: 580px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Pages that aren't the hero need top padding to clear fixed navbar */
+.page-top {
+    padding-top: 120px;
+}
+
+/* Active nav link */
+.nav-active {
+    color: var(--gold-accent) !important;
 }
 
 .cta-button {
@@ -156,6 +307,19 @@ body {
     background: var(--primary-purple);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(107, 74, 142, 0.4);
+}
+
+/* Hero Logo */
+.hero-logo {
+    margin: 1.5rem auto 1.8rem;
+}
+
+.psychk-logo {
+    width: 110px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(107, 74, 142, 0.25);
+    opacity: 0.95;
 }
 
 /* Section Titles */
@@ -198,6 +362,17 @@ body {
     width: 100%;
     max-width: 300px;
     height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(139, 111, 176, 0.2);
+    display: block;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 300px;
+    height: 380px;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(139, 111, 176, 0.2);
     display: block;
@@ -258,6 +433,15 @@ body {
     color: var(--text-dark);
 }
 
+/* Personal note in About */
+.personal-note {
+    font-style: italic;
+    color: var(--warm-gray);
+    border-left: 3px solid var(--gold-accent);
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
 /* Services Section */
 .services {
     padding: var(--section-padding);
@@ -316,6 +500,19 @@ body {
     color: var(--warm-gray);
     margin-bottom: 0.6rem;
     font-size: 0.95rem;
+}
+
+/* Single featured service */
+.single-service {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-service {
+    border: 2px solid var(--soft-lavender);
+    box-shadow: 0 8px 25px rgba(139, 111, 176, 0.15);
 }
 
 /* Testimonials Section */
