@@ -312,10 +312,11 @@ body {
 /* Hero Logo */
 .hero-logo {
     margin: 1.5rem auto 1.8rem;
+    text-align: center;
 }
 
 .psychk-logo {
-    width: 110px;
+    width: 175px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 14px rgba(107, 74, 142, 0.25);
